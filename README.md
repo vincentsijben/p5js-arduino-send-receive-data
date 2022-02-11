@@ -6,7 +6,7 @@ For 1201 characters, it takes approx. 300ms to send and receive data back with a
 * Data is send as a long string like 100;100;100+100;100;101+100;100;102+|
 * The + is used for marking a new led color 3-pair and | is used for marking end of data message
 * 255;255;255+ is 12 characters, so for 100 leds that would make up for 1200 characters. 
-* Include the ending character | and you'll need 1201 characters for the dataSize
+* Include the ending character | and you'll need 1201 characters for the dataSize variable in `arduino.ino`.
 
 # install
 * install the https://github.com/p5-serial/p5.serialport app to be able to map the serial bus to a web socket so p5js can communicate.
